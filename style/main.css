@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e0e0;
+}
+
+.control_square {
+  display: block;
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #e9b381;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: #e5a66b;
+}
+
+.o {
+  position: relative;
+}
+
+.o:after {
+  position: absolute;
+  content: "\1F6E1";
+  font-size: 50px;
+  line-height: 100px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  position: absolute;
+  content: "\2694";
+  font-size: 50px;
+  line-height: 100px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */

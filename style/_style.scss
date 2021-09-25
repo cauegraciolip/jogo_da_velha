@@ -1,0 +1,60 @@
+$square-color: #e9b381;
+$bg: #e4e0e0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg;
+}
+
+.control_square {
+    display: block;
+    text-align: center;
+}
+
+.square {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: $square-color;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken($square-color, 5);
+    }
+}
+
+.o {
+    position: relative;
+
+    &:after{
+        position: absolute;
+        content: "\1F6E1";
+        font-size: 50px;
+         line-height: 100px;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.x {
+    position: relative;
+
+    &:after{
+        position: absolute;
+        content: "\2694";
+        font-size: 50px;
+         line-height: 100px;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
